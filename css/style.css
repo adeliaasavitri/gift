@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap");
+* {
+  font-family: "Press Start 2P";
+}
+body {
+  color: azure;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+  }
+  10%,
+  90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+.description {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: -60px;
+}
+
+/* .button a {
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #111;
+} */
+
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 70%;
+}
+
+.button-yes {
+  padding: 12px 25px 12px 25px;
+  border-radius: 25px;
+}
+
+.button-yes {
+  text-decoration: none;
+}
+
+.buttonNo {
+  padding: 12px 25px 12px 25px;
+  border-radius: 25px;
+  position: relative;
+}
+
+@media screen and (max-width: 574px) {
+  .description {
+    font-size: 1rem;
+  }
+
+  .button a {
+    font-size: 0.5rem;
+  }
+}
